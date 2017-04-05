@@ -101,7 +101,7 @@ describe('client.infoAll()', function () {
       results.forEach(function (result) {
         expect(result.host).to.be.ok()
         expect(result.info).to.be('status\tok\n')
-        expect(result.error).to.be.ok()
+        expect(result.error).to.be(null)
       })
       done()
     })
